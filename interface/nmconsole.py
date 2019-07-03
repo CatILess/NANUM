@@ -24,9 +24,18 @@ banner \t\t\tDisplay a NANUM Main Banner
 	return help_context
 
 # Module Control Functions
+def status():
+	stat_context = """
+ [*] NANUM STATUS SCREEN
+   [+] ACTIVE
+""" + "      Modules" + """
+   [-] INACTIVE 
+""" + "      Modules\n"
+	return stat_context[1:]
 
-
-
+# Sub Funstions
+def getStat():
+	pass
 
 #################
 # Main Function #
@@ -46,7 +55,17 @@ if __name__ == "__main__":
 			print(help())
 		elif cmd in ["banner"]:
 			print(banner())
-		
+		elif cmd in ["status","stat"]:
+			print(status())		
+		elif cmd in ["control"]:
+			pass		
+		elif cmd in [""]:
+			pass		
+		elif cmd in [""]:
+			pass		
+		elif cmd in [""]:
+			pass	
+			
 	
 
 
