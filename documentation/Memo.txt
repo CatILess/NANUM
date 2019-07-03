@@ -1,0 +1,9 @@
+To Need
+
+- interface/nmconsole
+ 1. Show Running Service
+ 2. Control Setting of Services
+ 3. Control Run and Stop of Serives
+ 4. Show Result of Services like as Logs
+
+- Modules/...
