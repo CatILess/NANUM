@@ -1,6 +1,10 @@
 ROOTDIR=${PWD}
 MODULES=${ROOTDIR}/modules
 
+#init git submodules
+git submodule init
+git submodule update
+
 #portspoof
 echo "Install portspoof....."
 sudo apt-get install g++ make

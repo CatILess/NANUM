@@ -7,3 +7,9 @@
 [submodule "modules/spidertrap"]
 	path = modules/spidertrap
 	url = https://bitbucket.org/ethanr/spidertrap
+[submodule "invisiport"]
+	path = invisiport
+	url = https://bitbucket.org/Zaeyx/invisiport
+[submodule "modules/invisiport"]
+	path = modules/invisiport
+	url = https://bitbucket.org/Zaeyx/invisiport
