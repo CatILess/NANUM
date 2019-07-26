@@ -1,0 +1,9 @@
+[submodule "modules/cowrie"]
+	path = modules/cowrie
+	url = http://github.com/cowrie/cowrie
+[submodule "modules/portspoof"]
+	path = modules/portspoof
+	url = https://github.com/drk1wi/portspoof
+[submodule "modules/spidertrap"]
+	path = modules/spidertrap
+	url = https://bitbucket.org/ethanr/spidertrap
