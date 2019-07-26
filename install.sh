@@ -15,9 +15,6 @@ sudo chmod +x /etc/init.d/portspoof
 #cowrie
 echo "Install cowrie......"
 sudo apt-get install git python-virtualenv libssl-dev libffi-dev build-essential libpython3-dev python3-minimal authbind
-#sudo adduser --disabled-password cowrie
-
-#sudo su - cowrie <<EOF
 cd $MODULES/cowrie
 virtualenv --python=python3 cowrie-env
 source cowrie-env/bin/activate
