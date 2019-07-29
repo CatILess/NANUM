@@ -106,7 +106,8 @@ def add_blacklist(ip):
 	fi.close()
 
 def check_blacklist(ip):
-	fi = open(filename,"r")
+	
+	fi = open(filename,"a+")
 	data = fi.read()
 	fi.close()
 	return ip in data

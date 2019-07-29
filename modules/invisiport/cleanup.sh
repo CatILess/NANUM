@@ -5,4 +5,4 @@
 
 iptables -F
 iptables -t nat -F
-> blacklist
+> /tmp/blacklist
