@@ -1,0 +1,13 @@
+blacklist : /tmp/blacklist
+
+whitelist : 127.0.0.1, localhost
+
+bindport : 445
+
+fakeport : 80, 443
+
+chainport : 8000
+
+chain : 80-8000, 443-8000
+
+
