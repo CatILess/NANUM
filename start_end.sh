@@ -17,7 +17,10 @@ start()
 		echo "Scenario 2 start : invisiport + portspoof + cowrie"
 		
 		sudo python2 $INVISIPORT/invisiport.py -c $INVISIPORT/config > /dev/null &
-		sudo /etc/init.d/portspoof start
+		#sudo /etc/init.d/portspoof start
+		sudo /usr/local/bin/portspoof -D -c /usr/local/etc/portspoof.conf -s /usr/local/etc/portspoof_signatures &
+		source $COWRIE/cowrie-env/bin/activate
+		$COWRIE/bin/cowrie start
 		
 		;;
 	3)
@@ -33,12 +36,15 @@ clean()
 {
         case $1 in
         1)
-                echo "Scenario 1 end : clean iptalbes"
+                echo "Scenario 1 end"
                 ;;
         2)
-                echo "Scenario 2 end : clean iptables"
+                echo "Scenario 2 end"
+		sudo /etc/init.d/portspoof stop
                 sudo $INVISIPORT/cleanup.sh
-		
+		source $COWRIE/cowrie-env/bin/activate
+		$COWRIE/bin/cowrie stop		
+
 		;;
         3)
                 ;;
