@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Program : nmconsole.py
 # Developer : Cat|less
 # Python 3.7.3
@@ -20,7 +21,7 @@ def banner():
       └─┘ ┴   └─┘┴ ┴ ┴  │ ┴─┘└─┘└─┘└─┘
                                      version 0.4
     """
-    return banner_context
+    return strStyle(banner_context,["GREEN"])
 def help():
     help_context = """
 Basic Commands
@@ -62,7 +63,7 @@ if __name__ == "__main__":
     # Command Control
     cmd = ""
     while cmd not in ["q","quit","exit"]:
-        cmd = raw_input(strStyle("nmconsole > ",["CYAN"]))
+        cmd = raw_input(strStyle("nmconsole > ",["CYAN","UNDER"]))
         cmd = cmd.lower().strip()
 
         if cmd in ["?","help","h"]:
