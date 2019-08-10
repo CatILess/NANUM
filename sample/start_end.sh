@@ -6,7 +6,7 @@ PORTSPOOF=${MODULES}/portspoof
 SPIDERTRAP=${MODULES}/spidertrap
 COWRIE=${MODULES}/cowrie
 
-SCENARIO=${ROOTDIR}/scenario
+SCENARIO=${ROOTDIR}/sample/scenario
 SCENARIO_1=${SCENARIO}/scenario1
 SCENARIO_2=${SCENARIO}/scenario2
 
