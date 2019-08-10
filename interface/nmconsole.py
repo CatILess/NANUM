@@ -4,13 +4,22 @@
 
 # Import Modules
 import os
+from ui_tools.ui_basic import strStyle
 
 # Basic UI Functions
 def banner():
     banner_context = """
-NANUM CONSOLE v0.1
-       by Cat|less
-	"""
+███╗   ██╗ █████╗ ███╗   ██╗██╗   ██╗███╗   ███╗
+████╗  ██║██╔══██╗████╗  ██║██║   ██║████╗ ████║
+██╔██╗ ██║███████║██╔██╗ ██║██║   ██║██╔████╔██║
+██║╚██╗██║██╔══██║██║╚██╗██║██║   ██║██║╚██╔╝██║    
+██║ ╚████║██║  ██║██║ ╚████║╚██████╔╝██║ ╚═╝ ██║        
+╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝  
+      ┌┐ ┬ ┬  ┌─┐┌─┐┌┬┐ │ ┬  ┌─┐┌─┐┌─┐
+      ├┴┐└┬┘  │  ├─┤ │  │ │  ├┤ └─┐└─┐
+      └─┘ ┴   └─┘┴ ┴ ┴  │ ┴─┘└─┘└─┘└─┘
+                                     version 0.4
+    """
     return banner_context
 def help():
     help_context = """
@@ -53,7 +62,7 @@ if __name__ == "__main__":
     # Command Control
     cmd = ""
     while cmd not in ["q","quit","exit"]:
-        cmd = raw_input("nmconsole > ")
+        cmd = raw_input(strStyle("nmconsole > ",["CYAN"]))
         cmd = cmd.lower().strip()
 
         if cmd in ["?","help","h"]:
