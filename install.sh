@@ -13,8 +13,8 @@ cd $MODULES/portspoof
 ./configure
 make
 sudo make install
-sudo cp ./system_files/init.d/portspoof.sh /etc/init.d/portspoof
-sudo chmod +x /etc/init.d/portspoof
+sudo cp ./system_files/init.d/portspoof.sh /etc/init.d/.
+sudo chmod +x /etc/init.d/portspoof.sh
 
 #cowrie
 echo "Install cowrie......"
