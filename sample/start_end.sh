@@ -66,9 +66,9 @@ clean()
 
 
 
-if [ "$1" == "start" ]; then
+if [ "$1" == "start" ];then
 	start $2
-elif [ "$1" == "end" ]; then
+elif [ "$1" == "end" ];then
 	clean $2
 else
 	echo "usage : start_end.sh [start|end] [1|2|3]"
