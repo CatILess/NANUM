@@ -18,7 +18,8 @@ start()
 	1)
 		echo "Scenario 1 start : invisiport + spidertrap"		
 		sudo python2 $INVISIPORT/invisiport.py -c $SCENARIO_1/config > /dev/null &
-		python2 $SPIDERTRAP/spidertrap.py 1> /dev/null 2> /dev/null & 
+		python2 $SPIDERTRAP/spidertrap.py 1> /tmp/log_spidertrap 2> /tmp/log_spidertrap & 
+
 
 		;;
 	2)
